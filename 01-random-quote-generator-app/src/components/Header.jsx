@@ -1,6 +1,6 @@
 function Header() {
   return (
-    <header className="text-center">
+    <header className="text-center" role="banner">
       <h1 className="text-3xl font-bold text-yellow-400">
         Random Quotes App
       </h1>

@@ -4,11 +4,13 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <main className="h-screen flex flex-col justify-between p-16 bg-indigo-950">
+    <div className="h-screen flex flex-col justify-between p-16 bg-indigo-950">
       <Header />
-      <Quote />
+      <main>
+        <Quote />
+      </main>
       <Footer />
-    </main>
+    </div>
   )
 }
 

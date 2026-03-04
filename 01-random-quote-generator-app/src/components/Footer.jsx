@@ -21,12 +21,21 @@ function Footer() {
   ]
   return (
     <footer className="text-center text-gray-400 text-xs">
-      {attributions.map(attribution => 
-        <p key={attribution.id}>
-          <a href={attribution.url} title={attribution.title} target="_blank" rel="noopener noreferrer">{attribution.text}</a>
-        </p>
-      )}
-      
+      <ul>
+        {attributions.map(attribution => 
+          <li key={attribution.id}>
+            <a
+              className="hover:underline focus:underline focus:outline-none" 
+              href={attribution.url} 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              {attribution.text}
+              <span className="sr-only">(opens in a new tab)</span>
+            </a>
+          </li>
+        )}
+      </ul>
     </footer>
   )
 }
