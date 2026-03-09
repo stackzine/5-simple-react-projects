@@ -23,7 +23,7 @@ function Footer() {
     <footer className="text-center text-gray-400 text-xs">
       <ul>
         {attributions.map(attribution => 
-          <li key={attribution.id}>
+          <li key={attribution.id} className="leading-relaxed">
             <a
               className="hover:underline focus:underline focus:outline-none" 
               href={attribution.url} 

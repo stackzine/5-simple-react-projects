@@ -8,7 +8,7 @@ function Quote() {
 
   useEffect(() => {
     const handleKeyDown = (e) => {
-      const tag = e.target.tagName.toLowerCase()
+      const tag = e.target?.tagName?.toLowerCase()
       if(tag === 'input' || tag === 'textarea') {
         return;
       }
