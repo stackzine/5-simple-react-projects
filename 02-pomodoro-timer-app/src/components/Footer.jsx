@@ -1,7 +1,21 @@
 function Footer() {
   return (
     <footer role="contentinfo">
-      <p className="text-center text-[#767A98] text-xs">Attributions here if any</p>
+      <ul>
+        <li className="text-center text-xs text-[#76789A]">
+          Made with <span className="text-red-400">love</span> by&nbsp;
+          <a 
+            className="hover:underline focus:underline focus:outline-0" 
+            href="https://stackzine.com/" 
+            title="Made by Stackzine" 
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
+            Stackzine 
+            <span className="sr-only">(open in new tab)</span>
+          </a>
+        </li>
+      </ul>
     </footer>
   )
 }
