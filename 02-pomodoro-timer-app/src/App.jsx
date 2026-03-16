@@ -36,7 +36,7 @@ function App() {
           <FancyButton name="break" focus={!focus} ariaKey="b" onclick={() => setFocus(false)} />
         </div>
     
-        { focus ? <PomodoroTimer key="focus" type="focus" time="1500" /> : <PomodoroTimer key="break" type="break" time="10" />}
+        { focus ? <PomodoroTimer key="focus" type="focus" time="1500" /> : <PomodoroTimer key="break" type="break" time="300" />}
       </main>
       <Footer />
     </div>
