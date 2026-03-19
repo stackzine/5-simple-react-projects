@@ -1,7 +1,7 @@
-function FancyButton({ name, focus, ariaKey, onclick}) {
+function FancyButton({ name, focus, ariaKey, onClick}) {
   return (
     <button
-      onClick={onclick}
+      onClick={onClick}
       aria-keyshortcuts={ariaKey}
       title={`Press ${ariaKey.toUpperCase()} for ${ariaKey === 'f' ? 'Focus mode' : 'Break mode'}`}
       className={`relative cursor-pointer text-2xl text-[#CFD5F3] hover:text-white 

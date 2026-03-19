@@ -16,13 +16,14 @@ function Footer() {
           </a>
         </li>
         <li className="text-center text-xs text-[#76789A]">
-          Sound Effect by 
+          Sound Effect by&nbsp;
           <a 
             href="https://pixabay.com/users/jeremayjimenez-28887262/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=266492"
             target="_blank"
             rel="noopener noreferrer"  
           >
             Jeremay Jimenez&nbsp;
+            <span className="sr-only">(open in new tab)</span>
           </a>from&nbsp;
           <a 
             href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=266492"
@@ -30,6 +31,7 @@ function Footer() {
             rel="noopener noreferrer"
           >
             Pixabay
+            <span className="sr-only">(open in new tab)</span>
           </a>
         </li>
       </ul>

@@ -32,8 +32,8 @@ function App() {
         <PomodoroInfo />
 
         <div className="flex justify-center items-baseline gap-6 pb-4">
-          <FancyButton name="focus" focus={focus} ariaKey="f" onclick={() => setFocus(true)} />
-          <FancyButton name="break" focus={!focus} ariaKey="b" onclick={() => setFocus(false)} />
+          <FancyButton name="focus" focus={focus} ariaKey="f" onClick={() => setFocus(true)} />
+          <FancyButton name="break" focus={!focus} ariaKey="b" onClick={() => setFocus(false)} />
         </div>
     
         { focus ? <PomodoroTimer key="focus" type="focus" time="1500" /> : <PomodoroTimer key="break" type="break" time="300" />}

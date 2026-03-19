@@ -50,7 +50,7 @@ function PomodoroTimer({ type, time = 1500 }) {
     return () => {
       window.removeEventListener('keydown', handleKeyDown)
     }
-  })
+  }, [])
 
   const progress = timeLeft / time
   const offset = circumference * (1 - progress)
@@ -117,10 +117,10 @@ function PomodoroTimer({ type, time = 1500 }) {
           >
             {timeLeft === 0 ? 
               <span className="text-2xl">
-                {focus ? 'Focus timer finished' : 'Break timer finished'}
+                {type === 'focus' ? 'Focus timer finished' : 'Break timer finished'}
               </span> : 
               <>
-                {Math.floor(timeLeft / 60)}:{String(timeLeft % 60).padStart(2, "0")}
+                {`${Math.floor(timeLeft / 60)}:${String(timeLeft % 60).padStart(2, "0")}`}
               </>
             }
           </div>
