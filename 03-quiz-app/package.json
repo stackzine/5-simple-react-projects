@@ -16,5 +16,10 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/stackzine/5-simple-react-projects.git"
+  },
+  "devDependencies": {
+    "webpack": "^5.105.4",
+    "webpack-cli": "^7.0.2",
+    "webpack-dev-server": "^5.2.3"
   }
 }
