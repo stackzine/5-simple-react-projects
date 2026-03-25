@@ -1,0 +1,20 @@
+{
+  "name": "03-quiz-app",
+  "private": true,
+  "version": "1.0.0",
+  "description": "a quiz app",
+  "license": "ISC",
+  "author": "stackzine",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stackzine/5-simple-react-projects.git"
+  }
+}
